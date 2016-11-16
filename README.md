@@ -14,7 +14,11 @@ On Ubuntu 16.04 the abovementioned prerequisites can be installed with the follo
 sudo apt install cmake doxygen
 ```
 
+A similar procedure should work on most modern Linux systems. The code itself does not use any Linux-specific functionality, so it should be directly portable to Windows, but this has not been tested.
+
 ## Quickstart
+
+### Building the code
 
 After installing the prerequisites, `cd` to the project folder and build the code:
 ```
@@ -28,6 +32,10 @@ then run the demo:
 ```
 blablabla
 ```
+
+### Building the docs
+
+blabla
 
 ## Detailed description
 
