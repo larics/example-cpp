@@ -10,7 +10,7 @@
 
 #include "Vehicle.h"
 
-namespace Vehicles
+namespace vehicles
 {
     
 /*! A Car class.
@@ -25,7 +25,7 @@ class Car : public Vehicle
         Constructs a brand new car.
 
         \param make The make of the car.
-        \param max_speed The maximum speed of the car.
+        \param max_speed The maximum speed of the car, in km/h.
 
      */
     Car(std::string model, double max_speed);
@@ -42,9 +42,23 @@ class Car : public Vehicle
 
     virtual double decelerate(double speed);
 
+    virtual double speed(void)
+    {
+        return current_speed_;
+    }
+
+    virtual double updateDistance(double td);
+    
     virtual std::string model(void)
     {
         return model_;
+    }
+
+    virtual void stuck_in_traffic(bool stuck);
+    
+    virtual bool stuck_in_traffic(void)
+    {
+        return stuck_;
     }
     
  private:
@@ -64,8 +78,14 @@ class Car : public Vehicle
 
     // Current car speed.
     double current_speed_;
+
+    // Total distance travelled.
+    double total_distance_;
+    
+    // Variable indicating if the vehicle is stuck in traffic or not
+    bool stuck_;
 };
  
-} // namespace Vehicles
+} // namespace vehicles
 
 #endif // H_VEHICLES_CAR

@@ -6,13 +6,15 @@
 
 #include <iostream>
 
-#include "Car.h"
+#include "SimulationEngine.h"
 
-using Vehicles::Car;
+using vehicles::SimulationEngine;
 
 int main(int argc, char** argv)
 {
-    Car car("Nissan", 200.0);
+
+    SimulationEngine sim(2);
+    sim.run();
     
     return 0;
 }

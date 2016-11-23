@@ -2,6 +2,8 @@
 
 An example generic C++ project conforming to the [LARICS C++ coding standard](http://larics.rasip.fer.hr/farm/laricswiki/doku.php?id=software:coding_standard#c_coding_standards). Outlines general rules for C++ projects. Specific frameworks (e.g. ROS, Qt, ...) may have additional rules or override some of these rules.
 
+The example implements a very simplified race simulation between different types of vehicles.
+
 ## Prerequisites
 
 The code has been developed and tested on an Ubuntu 16.04 system. The following libraries are required to build the code and the developer docs:

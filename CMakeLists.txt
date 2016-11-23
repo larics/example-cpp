@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(traffic_sim)
+project(race_simulation)
 
 # Specify where to look for include files
 include_directories(include)
@@ -9,9 +9,11 @@ include_directories(include)
 #add_subdirectory(src)
 
 # Specify the source files that need to be build
-set(traffic_sim_SOURCES src/Car.cpp
-                        src/sim_main.cpp)
-
+set(race_simulation_SOURCES src/Car.cpp
+                            src/Bike.cpp
+                            src/SimulationEngine.cpp
+                            src/race_main.cpp)
+                          
 # Tell CMake to build the source
-add_executable(traffic_sim ${traffic_sim_SOURCES})
-
+add_executable(race_simulation ${race_simulation_SOURCES})
+set_property(TARGET race_simulation PROPERTY CXX_STANDARD 11)                          
