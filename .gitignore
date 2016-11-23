@@ -30,3 +30,6 @@
 
 # Emacs autosave files
 *~
+
+# The build folder
+build

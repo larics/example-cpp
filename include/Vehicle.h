@@ -4,8 +4,10 @@
    Note that no line exceeds 80 characters in length.
  */
 
-#ifndef H_VEHICLE
-#define H_VEHICLE
+#ifndef H_VEHICLES_VEHICLE
+#define H_VEHICLES_VEHICLE
+
+#include <string>
 
 namespace Vehicles
 {
@@ -16,10 +18,15 @@ namespace Vehicles
  */
 class Vehicle
 {
+ public:
+    
     /*! The Vehicle constructor.
         Does nothing.
      */
-    Vehicle();
+    Vehicle()
+    {
+
+    }
 
     /*! The Vehicle destructor.
         It is pure virtual and prevents the direct instantiation of Vehicle objects.
@@ -46,9 +53,17 @@ class Vehicle
         If it is less than zero, it is also discarded.
      */
     virtual double decelerate(double speed) = 0;
+
+    /*! Returns the model of the vehicle */
+    virtual std::string model(void) = 0;
 };
+
+inline Vehicle::~Vehicle()
+{
+
+}
 
 } // namespace Vehicles
 
-#endif // H_VEHICLES
+#endif // H_VEHICLES_VEHICLE
 
