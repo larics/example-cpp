@@ -43,7 +43,7 @@ class Vehicle
      */
     virtual double accelerate(double speed) = 0;
 
-    /*! Decelearte the vehicle.
+    /*! Decelerate the vehicle.
         Decelerates the vehicle to the desired speed.
 
         \param speed The desired speed.
