@@ -49,7 +49,7 @@ class Car : public Vehicle
     
  private:
 
-    //Don't use Doxygen commens for private members,
+    //Don't use Doxygen comments for private members,
     //because we don't want to autogenerate docs for these.
     
 
