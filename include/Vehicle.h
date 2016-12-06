@@ -14,7 +14,8 @@ namespace vehicles
 
 /*! The Vehicle base class.
     This is an Abstract Base Class (ABC). It just defines the vehicle interface.
-    It does not contain any data and can not be instantiated.
+    It does not contain any data and can has pure virtual functions,
+    so it can not be instantiated.
  */
 class Vehicle
 {
@@ -29,9 +30,10 @@ class Vehicle
     }
 
     /*! The Vehicle destructor.
-        It is pure virtual and prevents the direct instantiation of Vehicle objects.
+
+        The default keyword is used for ABC destructors.
      */
-    virtual ~Vehicle() = 0;
+    virtual ~Vehicle() = default;
 
     /*! Accelerate the vehicle.
         Accelerates the vehicle until the desired speed is reached.
@@ -74,12 +76,6 @@ class Vehicle
     /*! Returns true if the vehicle is stuck in traffic */
     virtual bool stuck_in_traffic(void) = 0;
 };
-
-// Although the class is pure virtual, the destructor must be implemented.
-inline Vehicle::~Vehicle()
-{
-
-}
 
 } // namespace Vehicles
 
