@@ -8,12 +8,13 @@ The example implements a very simplified race simulation between different types
 
 The code has been developed and tested on an Ubuntu 16.04 system. The following libraries are required to build the code and the developer docs:
 
+ * C++ compiler and linker spporting the C++11 standard
  * cmake
  * doxygen
 
 On Ubuntu 16.04 the abovementioned prerequisites can be installed with the following commands:
 ```
-sudo apt install cmake doxygen
+sudo apt install build-essential cmake doxygen
 ```
 
 A similar procedure should work on most modern Linux systems. The code itself does not use any Linux-specific functionality, so it should be directly portable to Windows, but this has not been tested.
@@ -30,14 +31,19 @@ cmake ..
 make
 ```
 
-then run the demo:
+then run the demo from inside the build folder:
 ```
-blablabla
+./race_simulation
 ```
 
-### Building the docs
+### Building and viewing the docs
 
-blabla
+From the project root (where `Doxyfile` is located), run:
+
+```
+doxygen
+firefox doc/html/index.html &
+```
 
 ## Detailed description
 

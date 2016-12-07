@@ -12,7 +12,7 @@ using vehicles::SimulationEngine;
 
 int main(int argc, char** argv)
 {
-
+    // Create a simulated race of 2km.
     SimulationEngine sim(2);
     sim.run();
     

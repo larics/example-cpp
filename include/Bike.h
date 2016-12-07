@@ -1,7 +1,6 @@
-/* \file  Bike.h
-   \brief Contains the definition of the Bike class.
-
- */
+/// \file  Bike.h
+/// \brief Contains the definition of the Bike class.
+///
 
 #ifndef H_VEHICLES_BIKE
 #define H_VEHICLES_BIKE
@@ -13,27 +12,25 @@
 namespace vehicles
 {
     
-/*! A Bike class.
-
-    Implements a **very** simplified Bike model.
- */
+/// A Bike class.
+/// Implements a **very** simplified Bike model.
+///
 class Bike : public Vehicle
 {
  public:
     
-    /*! The bike constructor.
-        Constructs a brand new bike.
-
-        \param make The model of the bike.
-        \param max_speed The maximum speed of the bike.
-
-     */
+    /// The bike constructor.
+    /// Constructs a brand new bike.
+    ///
+    /// \param model The model of the bike.
+    /// \param max_speed The maximum speed of the bike.
+    ///
     Bike(std::string model, double max_speed);
 
-    /*! The bike destructor.
-
-        Stops the bike and releases any possibly allocated resources.
-     */
+    /// The bike destructor.
+    ///
+    /// Stops the bike and releases any possibly allocated resources.
+    ///
     ~Bike();
 
     // Virtual methods will inherit the documentation
@@ -67,8 +64,8 @@ class Bike : public Vehicle
     
  private:
 
-    //Don't use Doxygen commens for private members,
-    //because we don't want to autogenerate docs for these.
+    // Don't use Doxygen commens for private members,
+    // because we don't want to autogenerate docs for these.
     
 
     // According to the coding standard, all private members

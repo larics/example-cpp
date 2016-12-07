@@ -31,5 +31,6 @@
 # Emacs autosave files
 *~
 
-# The build folder
+# The build and doc folders
 build
+doc
