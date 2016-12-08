@@ -2,8 +2,8 @@
 /// \brief Contains the definition of the Bike class.
 ///
 
-#ifndef H_VEHICLES_BIKE
-#define H_VEHICLES_BIKE
+#ifndef VEHICLES_BIKE_H
+#define VEHICLES_BIKE_H
 
 #include <string>
 
@@ -73,4 +73,4 @@ class Bike : public Vehicle
  
 } // namespace vehicles
 
-#endif // H_VEHICLES_BIKE
+#endif // VEHICLES_BIKE_H
