@@ -9,9 +9,9 @@ include_directories(include)
 #add_subdirectory(src)
 
 # Specify the source files that need to be build
-set(race_simulation_SOURCES src/Car.cpp
-                            src/Bike.cpp
-                            src/SimulationEngine.cpp
+set(race_simulation_SOURCES src/car.cpp
+                            src/bike.cpp
+                            src/simulation_engine.cpp
                             src/race_main.cpp)
                           
 # Tell CMake to build the source

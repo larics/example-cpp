@@ -6,9 +6,9 @@
 #include <chrono>
 #include <thread>
 
-#include "Bike.h"
-#include "Car.h"
-#include "SimulationEngine.h"
+#include "bike.h"
+#include "car.h"
+#include "simulation_engine.h"
 
 using std::cout;
 using std::endl;
