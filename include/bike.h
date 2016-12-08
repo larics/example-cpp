@@ -39,28 +39,15 @@ class Bike : public Vehicle
 
     virtual double decelerate(double speed);
 
-    virtual double speed(void)
-    {
-        return current_speed_;
-    }
+    virtual double getSpeed(void);
 
     virtual double updateDistance(double td);
     
-    virtual std::string model(void)
-    {
-        return model_;
-    }
+    virtual std::string getModel(void);
+      
+    virtual void setStuckInTraffic(bool stuck);
     
-    virtual void stuck_in_traffic(bool stuck)
-    {
-        // This is a no-op, because bikes never get stuck in traffic :)
-    }
-    
-    virtual bool stuck_in_traffic(void)
-    {
-        // Bikes never get stuck in traffic ;)
-        return false;
-    }
+    virtual bool isStuckInTraffic(void);
     
  private:
 

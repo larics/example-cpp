@@ -1,8 +1,6 @@
-/*! \file  SimulationEngine.h
-   \brief Simulation engine class declaration.
-
-   
-*/
+/// \file  SimulationEngine.h
+/// \brief Simulation engine class declaration.
+///
 
 #ifndef VEHICLES_SIMULATION_ENGINE_H
 #define VEHICLES_SIMULATION_ENGINE_H
@@ -58,6 +56,6 @@ class SimulationEngine
     
 };
     
-} // namespace Vehicles
+} // namespace vehicles
 
 #endif // VEHICLES_SIMULATION_ENGINE_H

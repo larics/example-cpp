@@ -4,8 +4,8 @@
 ///   Note that no line exceeds 80 characters in length.
 ///
 
-#ifndef H_VEHICLES_VEHICLE
-#define H_VEHICLES_VEHICLE
+#ifndef VEHICLES_VEHICLE_H
+#define VEHICLES_VEHICLE_H
 
 #include <string>
 
@@ -59,7 +59,7 @@ class Vehicle
     /// Returns the current vehicle speed in km/h
     ///
     ///
-    virtual double speed(void) = 0;
+    virtual double getSpeed(void) = 0;
 
     /// Update the travelled distance.
     ///
@@ -68,16 +68,16 @@ class Vehicle
     virtual double updateDistance(double td) = 0;
 
     /// Returns the model of the vehicle
-    virtual std::string model(void) = 0;
+    virtual std::string getModel(void) = 0;
 
     /// Makes the vehicle stuck in traffic
-    virtual void stuck_in_traffic(bool stuck) = 0;
+    virtual void setStuckInTraffic(bool stuck) = 0;
 
     /// Returns true if the vehicle is stuck in traffic
-    virtual bool stuck_in_traffic(void) = 0;
+    virtual bool isStuckInTraffic(void) = 0;
 };
 
 } // namespace Vehicles
 
-#endif // H_VEHICLES_VEHICLE
+#endif // VEHICLES_VEHICLE_H
 

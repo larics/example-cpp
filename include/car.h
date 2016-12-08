@@ -1,9 +1,9 @@
 /// \file  Car.h
-///   \brief Contains the definition of the Car class.
+/// \brief Contains the definition of the Car class.
 ///
 
-#ifndef H_VEHICLES_CAR
-#define H_VEHICLES_CAR
+#ifndef VEHICLES_CAR_H
+#define VEHICLES_CAR_H
 
 #include <string>
 
@@ -40,24 +40,15 @@ class Car : public Vehicle
 
     virtual double decelerate(double speed);
 
-    virtual double speed(void)
-    {
-        return current_speed_;
-    }
+    virtual double getSpeed(void);
 
     virtual double updateDistance(double td);
     
-    virtual std::string model(void)
-    {
-        return model_;
-    }
+    virtual std::string getModel(void);
 
-    virtual void stuck_in_traffic(bool stuck);
+    virtual void setStuckInTraffic(bool stuck);
     
-    virtual bool stuck_in_traffic(void)
-    {
-        return stuck_;
-    }
+    virtual bool isStuckInTraffic(void);
     
  private:
 

@@ -1,6 +1,5 @@
-/* Internal (maintainer) doc only.
-
- */
+// Internal (maintainer) doc only.
+//
 
 #include <iostream>
 #include <chrono>
@@ -46,7 +45,7 @@ void SimulationEngine::run()
     int id = 1;
     for (auto& veh : vehicles_)
     {
-        cout << id << ". " << veh->model() << endl;
+        cout << id << ". " << veh->getModel() << endl;
         id++;
         // We're setting a huge speed reference, so all vehicles
         // will put the pedal to the metal.
@@ -61,11 +60,11 @@ void SimulationEngine::run()
         for (auto& veh : vehicles_)
         {
             double distance = veh->updateDistance(td_);
-            cout << veh->model() << " is at " << distance << "km" << endl;
+            cout << veh->getModel() << " is at " << distance << "km" << endl;
             if (distance > max_distance)
             {
                 max_distance = distance;
-                leader = veh->model();
+                leader = veh->getModel();
             }  
         }
         // Sleep to make the simulation run in real-time
